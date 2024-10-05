@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="statusText">
+        <input id="status" readonly />
+      </div>
+      <div class="buttons1">
+        <button onclick="appendDisplay('7')" class="nums">7</button>
+        <button onclick="appendDisplay('8')" class="nums">8</button>
+        <button onclick="appendDisplay('9')" class="nums">9</button>
+        <button onclick="appendDisplay('*')" class="operations">*</button>
+      </div>
+      <div class="buttons2">
+        <button onclick="appendDisplay('4')" class="nums">4</button>
+        <button onclick="appendDisplay('5')" class="nums">5</button>
+        <button onclick="appendDisplay('6')" class="nums">6</button>
+        <button onclick="appendDisplay('-')" class="operations">-</button>
+      </div>
+      <div class="buttons3">
+        <button onclick="appendDisplay('1')" class="nums">1</button>
+        <button onclick="appendDisplay('2')" class="nums">2</button>
+        <button onclick="appendDisplay('3')" class="nums">3</button>
+        <button onclick="appendDisplay('+')" class="operations">+</button>
+      </div>
+      <div class="buttons4">
+        <button onclick="appendDisplay('0')" class="nums">0</button>
+        <button onclick="appendDisplay('.')" class="nums">.</button>
+        <button onclick="appendDisplay('/')" class="operations">/</button>
+        <button id="solve" class="operations">=</button>
+      </div>
+      <button class="Clear" id="erase">Clear</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
